@@ -1,3 +1,9 @@
+<?php
+    if (isset($_POST['upload'])) {
+        echo "pressed";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -26,7 +32,6 @@
         <div class="content">
             <h1>Upload</h1>
             <form action="?" method="POST" enctype="multipart/form-data">
-                <label>Uploading Files</label>
                 <p><input type="file" name="file"/></p>
                 <p><input type="submit" name="upload" value="Upload"></p>
             </form>
